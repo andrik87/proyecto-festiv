@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*
+Primario: Rosa terracota
+Secundario: café oscuro 
+Acento: dorado
+Fondo: Beige claro
+#B87872
+#302925
+#B6935C
+#F7F3EF
+#FFFFFF
+*/
+/* Para títulos. Font family: Playfair Display*/
+/* Para textos, menú y botones.Font famili: Poppins*/
+/*Font family:font-family: "Spicy Rice", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #FFFFFF;
+    font-family:"Poppins","Spicy Rice", "serif";
+}
+
+h1{
+   font-family:"Playfair Display", "Spicy Rice", "serif"; 
+   font-size: 2rem;
+}
+
+
+/*Encabezado*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6%;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+
+}
+
+.encabezado-logo{
+    width: 160px;
+    height: 160px;
+}
+
+.menu-lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-enlace{
+    display: block;
+    padding: 10px 18px;
+    border: solid 1px;
+    border-color: #B87872;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+
+}
+
+/*Footer*/
+.footer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 6%;
+    margin-top: 40px;
+    background-color: #1F2937;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.redes-sociales img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
