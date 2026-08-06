@@ -1,76 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
 
-
-/*
-Primario: Rosa terracota
-Secundario: café oscuro 
-Acento: dorado
-Fondo: Beige claro
-#B87872
-#302925
-#B6935C
-#F7F3EF
-#FFFFFF
-*/
 /* Para títulos. Font family: Playfair Display*/
 /* Para textos, menú y botones.Font famili: Poppins*/
 /*Font family:font-family: "Spicy Rice", serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
-    background-color: #FFFFFF;
-    font-family:"Poppins","Spicy Rice", "serif";
+/* 
+   REINICIO GENERAL
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-   font-family:"Playfair Display", "Spicy Rice", "serif"; 
-   font-size: 2rem;
+/*
+   PALETA DE COLORES
+
+   Primario:   #19324A
+   Secundario: #D97676
+   Acento:     #D4A72C
+   Fondo:      #FFF9F5
+   Blanco:     #FFFFFF
+*/
+
+
+/* 
+   ESTILOS GENERALES
+*/
+
+body {
+    background-color: #FFF9F5;
+    color: #19324A;
+    font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    color: #19324A;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
 
 /*Encabezado*/
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 6%;
+    gap: 40px;
+    padding: 14px 6%;
     background-color: #FFFFFF;
-    margin-bottom: 10px;
-
+    border-bottom: 1px solid #E8DDD4;
 }
 
 .encabezado-logo{
-    width: 160px;
-    height: 160px;
+   display: block;
+   width: 120px;
+   height: auto;
 }
 
 .menu-lista{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 25px;
-    list-style: none;
+    gap: 30px;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .menu-enlace{
     display: block;
-    padding: 10px 18px;
-    border: solid 1px;
-    border-color: #B87872;
-    border-radius: 15px;
-    background-color: #FFFFFF;
+    padding: 8px 2px;
+    border-bottom: 2px solid transparent;
+    color: #19324A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
     text-decoration: none;
-    color: black;
-    font-size: 1.25rem;
-
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
 }
+    
+.menu-enlace:hover {
+    color: #D97676;
+    border-bottom-color: #D4A72C;
+}
+
 
 /*Footer*/
 .footer{
@@ -81,7 +98,7 @@ h1{
     gap: 20px;
     padding: 25px 6%;
     margin-top: 40px;
-    background-color: #1F2937;
+    background-color: #19324A;
     color: #FFFFFF;
     text-align: center;
 }
