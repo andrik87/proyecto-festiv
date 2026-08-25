@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Contacto y cotizaciones | Festiv</title>
+</head>
+<body>
+    <header class="header">
+        <figure>
+            <img  class="encabezado-logo" src="../assets/logo.png" alt="logo de festiv" title="logo festiv">
+        </figure>
+        <nav class="menu">
+            <ul class="menu-lista">
+                <li class="menu-item">
+                    <a class="menu-enlace" href="../index.html">Ir a inicio</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-enlace" href="./servicios.html" aria-label="cabinas">cabinas</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-enlace" href="./sobre-mi.html" aria-label="nosotros">nosotros</a>
+                </li>
+                <li class="menu-item">   
+                    <a class="menu-enlace" href="./proyectos.html" aria-label="paquetes">paquetes</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-enlace" href="#" aria-label="contacto">contacto</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="presentacion-contacto">
+            <h1>Cotiza tu evento con Festiv</h1>
+            <p>Cuéntanos los detalles de tu celebración y te ayudaremos
+                a elegir la cabina o el paquete que mejor se adapte a tu
+                evento.
+            </p>
+        <figure>
+            <img src="../assets/imagen contacto.png" alt="Montaje de Festiv preparado para recibir a los invitados">
+            <figcaption>Comienza a crear una experiencia inolvidable para tu evento.</figcaption>
+        </figure>
+        </section>
+        <section class="formulario-contacto">
+            <h2>Solicita información</h2>
+            <p>Completa el siguiente formulario y nos pondremos en contacto contigo
+               para brindarte información sobre disponibilidad, servicios y paquetes.
+            </p>
+        <form action="#" method="post">
+            <div>
+                <label for="nombre">
+                    Nombre completo:
+                </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            </div>
+            <div>
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+                <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div>
+                <label for="telefono">
+                    Teléfono:
+                </label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número" required>
+            </div>
+            <div>
+                <label for="Tipo-evento">
+                    Tipo de evento:
+                </label>
+                <select id="tipo-evento" name="tipo de evento" required>
+                    <option value="">
+                        Selecciona una opción
+                    </option>
+                    <option value="Boda">
+                        Boda
+                    </option>
+                    <option value="XV años">
+                        XV años
+                    </option>
+                    <option value="cumpleaños">
+                        Cumpleaños
+                    </option>
+                    <option value="graduacion">
+                        Graduación
+                    </option>
+                    <option value="evento corporativo">
+                        Evento corporativo
+                    </option>
+                    <option value="otro">
+                        Otro
+                    </option>
+                </select>
+            </div>
+            <div>
+                <label for="fecha-evento">
+                    Fecha del evento:
+                </label>
+                <input type="date" id="fecha-evento" name="fecha-evento" required>
+            </div>
+            <div>
+                <label for="servicio">
+                    Servicio de interés:
+                </label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">
+                        Selecciona una opción
+                    </option>
+                    <option value="Espejo Mágico">
+                        Espejo Mágico
+                    </option>
+                    <option value="cabina 360">
+                        Cabina 360°
+                    </option>
+                    <option value="espejo selfie">
+                        Espejo Selfie
+                    </option>
+                    <option value="corazon led">
+                        Corazón Led
+                    </option>
+                    <option value="paquete festiv">
+                        Paquete festiv
+                    </option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">
+                    Cuéntanos sobre tu evento:
+                </label>
+                <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí los detalles de tu celebración"></textarea>
+            </div>
+            <button type="submit">Enviar solicitud</button>
+        </form>
+        </section>
+        <section class="informacion-contacto">
+            <h2>También puedes contactarnos</h2>
+            <p>
+                Escríbenos directamente para resolver tus dudas y consultar 
+                la disponibilidad de nuestros servicios.
+            </p>
+            <a href="https://www.whatsapp.com/?lang=es" target="_blank"> Contactar por WhatsApp</a>
+        </section>
+
+
+        
+    </main>
+    
+    <footer class="footer">
+        <nav>
+            <ul class="redes-sociales">
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../assets/instagram.png" alt="logo de instagram">
+                    </a>
+                </li>
+                 <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../assets/facebook.png" alt="logo de facebook">
+                    </a>
+                </li>
+                 <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="../assets/yt.png" alt="logo de youtube">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p> <script> document.getElementById('year').textContent = new Date().getFullYear(); </script>
+    </footer>
+    
+</body>
+</html>
