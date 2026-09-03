@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Paquetes para eventos | Festiv</title>
 </head>
 <body>
-    <header class="header">
-        <figure>
-            <img class="encabezado-logo" src="../assets/logo.png" alt="logo de festiv" title="logo festiv">
-        </figure>
-        <nav class="menu">
-            <ul class="menu-lista">
-                <li class="menu-item">
-                    <a class="menu-enlace" href="../index.html">Ir a inicio</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+            <img class="encabezado-logo" src="../assets/logo.png" alt="Logo de Festiv">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
-                <li class="menu-item">
-                    <a  class="menu-enlace" href="./servicios.html" aria-label="cabinas">cabinas</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">cabinas</a>
                 </li>
-                <li class="menu-item">
-                    <a class="menu-enlace" href="./sobre-mi.html" aria-label="nosotros">nosotros</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sobre-mi.html">nosotros</a>
                 </li>
-                <li class="menu-item">
-                    <a class="menu-enlace" href="#" aria-label="paquetes">paquetes</a>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">paquetes</a>
                 </li>
-                <li class="menu-item">
-                    <a class="menu-enlace" href="./contacto.html" aria-label="contacto">contacto</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">contacto</a>
                 </li>
-
-            </ul>
-        </nav>
-    </header>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main>
         <section class="presentacion-paquetes">
             <h1>Adquiere una experiencia completa</h1>
@@ -48,73 +54,80 @@
         </section>
         <section class="lista-paquetes">
             <h2>Conoce nuestros paquetes</h2>
-        <article class="paquete">
-            <h3>Paquete momentos</h3>
-        <figure>
-            <img src="../assets/imagen magic mirror y espejo selfie.png" alt="Magic Mirror y Espejo Selfie para eventos">
-            <figcaption>Magic Mirror y Espejo Selfie.</figcaption>
-        </figure>
+        <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <article class="paquete h-100">
+                <h3>Paquete momentos</h3>
+            <figure>
+                <img src="../assets/imagen magic mirror y espejo selfie.png" alt="Magic Mirror y Espejo Selfie para eventos">
+                <figcaption>Magic Mirror y Espejo Selfie.</figcaption>
+            </figure>
 
-            <p>Una combinación pensada para que tus invitados disfruten
+                <p>Una combinación pensada para que tus invitados disfruten
                     una experiencia interactiva y también cuenten con un
                     espacio elegante para tomarse fotografías.
-            </p>
-        <h4>Incluye:</h4>
-        <ul>
-             <li>Servicio de Magic Mirror durante dos horas.</li>
-             <li>Fotografías digitales o impresas.</li>
-             <li>Plantilla personalizada para el evento.</li>
-             <li>Accesorios para las fotografías.</li>
-             <li>Montaje floral del Espejo Selfie.</li>
-             <li>Alfombra blanca y letras decorativas.</li>
-             <li>Montaje y desmontaje.</li>
-        </ul>
-        </article>
-        <article class="paquete">
-            <h3>Paquete celebración</h3>
-        <figure>
-            <img src="../assets/imagen espejo selfie corazon led.png" alt="Espejo Selfie y Corazón LED para eventos">
-            <figcaption>Espejo Selfie y Corazón led.</figcaption>
-        </figure>
+                </p>
+            <h4>Incluye:</h4>
+            <ul>
+                <li>Servicio de Magic Mirror durante dos horas.</li>
+                <li>Fotografías digitales o impresas.</li>
+                <li>Plantilla personalizada para el evento.</li>
+                <li>Accesorios para las fotografías.</li>
+                <li>Montaje floral del Espejo Selfie.</li>
+                <li>Alfombra blanca y letras decorativas.</li>
+                <li>Montaje y desmontaje.</li>
+            </ul>
+            </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <article class="paquete h-100">
+                <h3>Paquete celebración</h3>
+            <figure>
+                <img src="../assets/imagen espejo selfie corazon led.png" alt="Espejo Selfie y Corazón LED para eventos">
+                <figcaption>Espejo Selfie y Corazón led.</figcaption>
+            </figure>
 
-            <p>Una propuesta visual y elegante que crea diferentes
+                <p>Una propuesta visual y elegante que crea diferentes
                     escenarios para fotografías durante bodas, XV años,
                     graduaciones y otras celebraciones.
-            </p>
-        <h4>Incluye:</h4>
-         <ul>
-                    <li>Espejo Selfie con decoración floral.</li>
-                    <li>Letras acrílicas personalizables.</li>
-                    <li>Alfombra blanca.</li>
-                    <li>Corazón iluminado completamente con luces LED.</li>
-                    <li>Espacios preparados para fotografías.</li>
-                    <li>Montaje y desmontaje.</li>
+                </p>
+            <h4>Incluye:</h4>
+            <ul>
+                <li>Espejo Selfie con decoración floral.</li>
+                <li>Letras acrílicas personalizables.</li>
+                <li>Alfombra blanca.</li>
+                <li>Corazón iluminado completamente con luces LED.</li>
+                <li>Espacios preparados para fotografías.</li>
+                <li>Montaje y desmontaje.</li>
             </ul>
-        </article>
-        <article class="paquete">
-            <h3>Experiencia Festiv</h3>
-        <figure>
-            <img src="../assets/imagen experiencia festiv.png" alt="Magic Mirror, Cabina 360 y Corazón LED en un evento">
-            <figcaption>Magic Mirror, Cabina 360 y Corazón led.</figcaption>
-        </figure>
-
-            <p> Nuestro paquete más completo reúne fotografía, video
+            </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <article class="paquete h-100">
+                <h3>Experiencia Festiv</h3>
+            <figure>
+                <img src="../assets/imagen experiencia festiv.png" alt="Magic Mirror, Cabina 360 y Corazón LED en un evento">
+                <figcaption>Magic Mirror, Cabina 360 y Corazón led.</figcaption>
+            </figure>
+                <p> Nuestro paquete más completo reúne fotografía, video
                     y un escenario iluminado para ofrecer diferentes
                     experiencias durante toda la celebración.
-            </p>
-        <h4>Incluye:</h4>
+                </p>
+            <h4>Incluye:</h4>
             <ul>
-                    <li>Servicio de Magic Mirror.</li>
-                    <li>Fotografías digitales o impresas.</li>
-                    <li>Plantilla personalizada.</li>
-                    <li>Accesorios para fotografías.</li>
-                    <li>Cabina 360 con iluminación.</li>
-                    <li>Videos digitales personalizados.</li>
-                    <li>Corazón led como escenario fotográfico.</li>
-                    <li>Personal de apoyo durante el servicio.</li>
-                    <li>Montaje y desmontaje.</li>
+                <li>Servicio de Magic Mirror.</li>
+                <li>Fotografías digitales o impresas.</li>
+                <li>Plantilla personalizada.</li>
+                <li>Accesorios para fotografías.</li>
+                <li>Cabina 360 con iluminación.</li>
+                <li>Videos digitales personalizados.</li>
+                <li>Corazón led como escenario fotográfico.</li>
+                <li>Personal de apoyo durante el servicio.</li>
+                <li>Montaje y desmontaje.</li>
             </ul>
-        </article>
+            </article>
+        </div>
+        </div>
         </section>
     </main>
     
@@ -140,6 +153,7 @@
         </nav>
         <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p> <script> document.getElementById('year').textContent = new Date().getFullYear(); </script>
     </footer>
-    
+<!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
 </body>
 </html>
