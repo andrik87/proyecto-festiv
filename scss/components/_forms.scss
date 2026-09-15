@@ -1,0 +1,40 @@
+@use "../utilities/variables" as v;
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.formulario-contacto form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid v.$color-borde;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.formulario-contacto {
+    input,
+    select,
+    textarea {
+        &:focus {
+            outline: 2px solid v.$color-acento;
+            outline-offset: 2px;
+            border-color: v.$color-acento;
+        }
+    }
+}
+
+.formulario-contacto textarea {
+    resize: none;
+}

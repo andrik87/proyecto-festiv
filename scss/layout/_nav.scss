@@ -1,0 +1,33 @@
+@use "../utilities/variables" as v;
+.navbar {
+    background-color: v.$color-blanco;
+    border-bottom: 1px solid v.$color-borde;
+    padding: 1rem;
+}
+
+.nav-link {
+    color: v.$color-primario;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
+    transform-origin: left center;
+
+    &:hover {
+        color: v.$color-secundario;
+    }
+
+    &:focus {
+        color: v.$color-acento;
+    }
+
+    &:focus-visible {
+        outline: 2px solid v.$color-acento;
+        outline-offset: 3px;
+        border-radius: 6px;
+        box-shadow: none;
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+}

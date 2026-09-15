@@ -1,0 +1,52 @@
+@use "../utilities/variables" as v;
+
+.galeria {
+    padding: 3rem 1.5rem;
+}
+
+#carouselFestiv {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#carouselFestiv img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(25, 50, 74, 0.7);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background-size: 50% 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: v.$color-primario;
+}
+
+.carousel-indicators .active {
+    background-color: v.$color-secundario;
+}
+
+.carousel-control-prev:focus-visible,
+.carousel-control-next:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.carousel-control-prev:focus-visible .carousel-control-prev-icon,
+.carousel-control-next:focus-visible .carousel-control-next-icon {
+    outline: 2px solid v.$color-acento;
+    outline-offset: 3px;
+    border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target]:focus-visible {
+    outline: 2px solid v.$color-acento;
+    outline-offset: 3px;
+    box-shadow: none;
+}

@@ -1,0 +1,14 @@
+@use"variables" as v;
+@mixin tarjeta-base {
+    background-color: v.$color-blanco;
+    border-radius: v.$radio-grande;
+    box-shadow: v.$sombra-suave;
+}
+@mixin boton-base {
+    background-color: v.$color-secundario;
+    color: v.$color-blanco;
+    padding: 1rem 1.5rem;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
