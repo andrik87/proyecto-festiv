@@ -1,0 +1,38 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+
+%boton-interactivo {
+    &:hover {
+        background-color: v.$color-secundario-hover;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    }
+
+    &:focus-visible {
+        outline: 2px solid v.$color-acento;
+        outline-offset: 3px;
+        box-shadow: none;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+.formulario-contacto button {
+    @include m.boton-base(v.$color-secundario, v.$color-blanco);
+    @extend %boton-interactivo;
+
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.informacion-contacto a {
+    @include m.boton-base(v.$color-secundario, v.$color-blanco);
+    @extend %boton-interactivo;
+
+    text-decoration: none;
+    border-radius: 16px;
+    align-self: center;
+}

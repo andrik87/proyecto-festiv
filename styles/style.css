@@ -119,6 +119,19 @@ h3 {
   object-fit: cover;
 }
 
+.informacion-contacto a:hover, .formulario-contacto button:hover {
+  background-color: #C96565;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+.informacion-contacto a:focus-visible, .formulario-contacto button:focus-visible {
+  outline: 2px solid #D4A72C;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+.informacion-contacto a:active, .formulario-contacto button:active {
+  transform: scale(0.98);
+}
+
 .formulario-contacto button {
   background-color: #D97676;
   color: #FFFFFF;
@@ -129,18 +142,6 @@ h3 {
   cursor: pointer;
   font-family: inherit;
 }
-.formulario-contacto button:hover {
-  background-color: #C96565;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-}
-.formulario-contacto button:focus-visible {
-  outline: 2px solid #D4A72C;
-  outline-offset: 3px;
-  box-shadow: none;
-}
-.formulario-contacto button:active {
-  transform: scale(0.98);
-}
 
 .informacion-contacto a {
   background-color: #D97676;
@@ -150,18 +151,6 @@ h3 {
   text-decoration: none;
   border-radius: 16px;
   align-self: center;
-}
-.informacion-contacto a:hover {
-  background-color: #C96565;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-}
-.informacion-contacto a:focus-visible {
-  outline: 2px solid #D4A72C;
-  outline-offset: 3px;
-  box-shadow: none;
-}
-.informacion-contacto a:active {
-  transform: scale(0.98);
 }
 
 .galeria {
@@ -471,6 +460,7 @@ h3 {
 .imagen-servicios {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 .imagen-servicios img {
   display: block;
@@ -522,5 +512,8 @@ h3 {
     max-width: 700px;
     margin: 0 auto;
     font-size: 1.125rem;
+  }
+  .imagen-servicios {
+    padding: 0;
   }
 }

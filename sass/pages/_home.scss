@@ -7,7 +7,7 @@
     padding: 3rem 1.5rem;
     text-align: center;
 
-    > p {
+    >p {
         max-width: 700px;
         margin: 0 auto;
     }
@@ -67,6 +67,7 @@
 .imagen-servicios {
     max-width: 900px;
     margin: 0 auto;
+    padding: 0 1.5rem;
 
     img {
         display: block;
@@ -131,5 +132,9 @@
             margin: 0 auto;
             font-size: 1.125rem;
         }
+    }
+
+    .imagen-servicios {
+        padding: 0;
     }
 }
