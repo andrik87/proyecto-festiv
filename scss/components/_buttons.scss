@@ -83,3 +83,27 @@
         color: v.$color-primario;
     }
 }
+
+.experiencia-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: v.$color-secundario;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease,
+        transform 0.2s ease;
+
+    &::after {
+        content: " →";
+    }
+
+    &:hover {
+        color: v.$color-secundario-hover;
+        transform: translateX(3px);
+    }
+
+    &:focus-visible {
+        outline: 2px solid v.$color-acento;
+        outline-offset: 3px;
+    }
+}

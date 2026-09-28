@@ -1,4 +1,5 @@
 @use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
 
 .servicios {
     display: flex;
@@ -145,6 +146,9 @@
 
 .experiencia-card {
     @include m.tarjeta-base;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     overflow: hidden;
 
     img {
@@ -156,9 +160,200 @@
 }
 
 .experiencia-contenido {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
     padding: 1.5rem;
     text-align: center;
+
+    .experiencia-link {
+        margin-top: auto;
+        padding-top: 1rem;
+    }
 }
+
+.asi-se-vive {
+    padding: 3rem 1.5rem;
+}
+
+.asi-se-vive-encabezado {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    p {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.asi-se-vive-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.asi-se-vive-card {
+    @include m.tarjeta-base;
+    overflow: hidden;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.asi-se-vive-contenido {
+    padding: 1.5rem;
+    text-align: center;
+
+    h3 {
+        margin-bottom: 0.75rem;
+    }
+}
+
+.paquete-destacado {
+    padding: 3rem 1.5rem;
+}
+
+.paquete-destacado-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+
+    background-color: v.$color-primario;
+    color: v.$color-blanco;
+
+    border: 1px solid rgba(212, 167, 44, 0.4);
+    border-top: 4px solid v.$color-acento;
+    border-radius: v.$radio-grande;
+    box-shadow: v.$sombra-suave;
+
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1rem;
+        color: v.$color-blanco;
+    }
+
+    p {
+        max-width: 680px;
+        margin: 0 auto 1.5rem;
+        line-height: 1.7;
+    }
+
+    .experiencia-link {
+        color: v.$color-acento;
+
+        &:hover {
+            color: v.$color-blanco;
+        }
+    }
+}
+
+
+.paquete-destacado {
+    padding: 3rem 1.5rem;
+}
+
+.paquete-destacado-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+
+    background-color: v.$color-blanco;
+    border: 1px solid rgba(212, 167, 44, 0.35);
+    border-radius: v.$radio-grande;
+    box-shadow: v.$sombra-suave;
+
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1rem;
+        color: v.$color-primario;
+    }
+
+    p {
+        max-width: 680px;
+        margin: 0 auto 1.5rem;
+        line-height: 1.7;
+        color: v.$color-primario;
+    }
+
+    .experiencia-link {
+        color: v.$color-secundario;
+
+        &:hover {
+            color: v.$color-secundario-hover;
+        }
+    }
+}
+
+.paquete-etiqueta {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.4rem 0.9rem;
+
+    background-color: rgba(217, 118, 118, 0.12);
+    color: v.$color-secundario;
+
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.quinta-san-jose {
+    padding: 3rem 1.5rem;
+}
+
+.quinta-san-jose-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(212, 167, 44, 0.35);
+    border-radius: 16px;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.cta-final {
+    padding: 3rem 1.5rem;
+}
+
+.cta-final-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+
+    background-color: v.$color-primario;
+    color: v.$color-blanco;
+
+    border-radius: v.$radio-grande;
+    box-shadow: v.$sombra-suave;
+
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1rem;
+        color: v.$color-blanco;
+    }
+
+    p {
+        max-width: 650px;
+        margin: 0 auto 1.5rem;
+        line-height: 1.7;
+    }
+}
+
+
 
 @media (min-width: 768px) {
     .servicios-lista {
@@ -167,6 +362,37 @@
             "magicmirror cabina360"
             "corazonled espejoselfie";
     }
+
+    .experiencias-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .asi-se-vive-grid {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .paquete-destacado-contenido {
+        padding: 3rem;
+    }
+
+    .paquete-etiqueta {
+        display: inline-block;
+        margin-bottom: 0.75rem;
+        padding: 0.4rem 0.9rem;
+
+        background-color: rgba(217, 118, 118, 0.12);
+        color: v.$color-secundario;
+
+        border-radius: 999px;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .cta-final-contenido {
+        padding: 3rem;
+    }
+
 }
 
 @media (min-width: 1024px) {
@@ -224,4 +450,23 @@
             font-size: 1.125rem;
         }
     }
+
+    .experiencias-grid {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .asi-se-vive-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .asi-se-vive-card {
+        img {
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+    }
+
 }
