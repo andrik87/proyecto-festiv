@@ -213,70 +213,24 @@
     }
 }
 
-.paquete-destacado {
-    padding: 3rem 1.5rem;
-}
-
 .paquete-destacado-contenido {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 2.5rem 1.5rem;
-
-    background-color: v.$color-primario;
-    color: v.$color-blanco;
-
-    border: 1px solid rgba(212, 167, 44, 0.4);
-    border-top: 4px solid v.$color-acento;
-    border-radius: v.$radio-grande;
-    box-shadow: v.$sombra-suave;
-
-    text-align: center;
-
-    h2 {
-        margin-bottom: 1rem;
-        color: v.$color-blanco;
-    }
-
-    p {
-        max-width: 680px;
-        margin: 0 auto 1.5rem;
-        line-height: 1.7;
-    }
-
-    .experiencia-link {
-        color: v.$color-acento;
-
-        &:hover {
-            color: v.$color-blanco;
-        }
-    }
-}
-
-
-.paquete-destacado {
     padding: 3rem 1.5rem;
+    background-color: rgba(217, 118, 118, 0.08);
+    border-radius: 16px;
 }
 
-.paquete-destacado-contenido {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2.5rem 1.5rem;
-
-    background-color: v.$color-blanco;
-    border: 1px solid rgba(212, 167, 44, 0.35);
-    border-radius: v.$radio-grande;
-    box-shadow: v.$sombra-suave;
-
-    text-align: center;
-
+.paquete-destacado-titulo {
     h2 {
         margin-bottom: 1rem;
         color: v.$color-primario;
     }
+}
 
+.paquete-destacado-info {
     p {
-        max-width: 680px;
-        margin: 0 auto 1.5rem;
+        margin-bottom: 1.5rem;
         line-height: 1.7;
         color: v.$color-primario;
     }
@@ -290,38 +244,70 @@
     }
 }
 
-.paquete-etiqueta {
-    display: inline-block;
-    margin-bottom: 0.75rem;
-    padding: 0.4rem 0.9rem;
-
-    background-color: rgba(217, 118, 118, 0.12);
+.experiencia-link {
     color: v.$color-secundario;
 
-    border-radius: 999px;
+    &:hover {
+        color: v.$color-secundario-hover;
+    }
+}
+
+
+.paquete-etiqueta {
+    margin-bottom: 0.75rem;
+    color: v.$color-secundario;
     font-size: 0.9rem;
     font-weight: 600;
 }
 
-.quinta-san-jose {
+.beneficios-quinta {
     padding: 3rem 1.5rem;
 }
 
-.quinta-san-jose-contenido {
-    max-width: 800px;
+.beneficios-quinta-contenido {
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
-    text-align: center;
-    border: 1px solid rgba(212, 167, 44, 0.35);
-    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
 
+.beneficios-quinta-imagen {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    aspect-ratio: 2 / 1;
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center 65%;
+
+        opacity: 0.9;
+        filter: saturate(0.65) brightness(1.02);
+    }
+}
+
+.beneficios-quinta-etiqueta {
+    margin-bottom: 0.5rem;
+
+    color: v.$color-secundario;
+    font-weight: 600;
+}
+
+.beneficios-quinta-texto {
     h2 {
         margin-bottom: 1rem;
     }
+}
 
-    p {
-        margin-bottom: 1rem;
-    }
+.beneficios-quinta-descripcion {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
 }
 
 .cta-final {
@@ -370,10 +356,6 @@
     .asi-se-vive-grid {
         max-width: 600px;
         margin: 0 auto;
-    }
-
-    .paquete-destacado-contenido {
-        padding: 3rem;
     }
 
     .paquete-etiqueta {
@@ -466,6 +448,36 @@
         img {
             aspect-ratio: 4 / 3;
             object-fit: cover;
+        }
+    }
+
+    .paquete-destacado-contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center start;
+        text-align: left;
+    }
+
+    .beneficios-quinta-contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    .beneficios-quinta-imagen {
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background: linear-gradient(to right,
+                    rgba(255, 249, 245, 0.7) 0%,
+                    rgba(255, 249, 245, 0.3) 22%,
+                    rgba(255, 249, 245, 0) 45%);
+
+            pointer-events: none;
         }
     }
 
