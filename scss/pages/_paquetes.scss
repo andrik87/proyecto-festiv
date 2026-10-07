@@ -1,79 +1,313 @@
 @use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
 
 .presentacion-paquetes {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
     padding: 3rem 1.5rem;
     text-align: center;
+}
 
-    > p {
-        max-width: 800px;
-        margin: 0 auto;
-    }
+.presentacion-paquetes-contenido {
+    max-width: 800px;
+    margin: 0 auto;
 
-    figure {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-
-    figcaption {
-        text-align: center;
-        margin-top: 0.75rem;
-        font-size: 0.875rem;
-        color: rgba(25, 50, 74, 0.7);
+    h1 {
+        margin-bottom: 1rem;
     }
 }
 
-.lista-paquetes {
+.presentacion-paquetes-etiqueta {
+    margin-bottom: 0.75rem;
+
+    color: v.$color-secundario;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.presentacion-paquetes-descripcion {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.paquete-principal {
+    padding: 3rem 1.5rem;
+    background-color: rgba(217, 118, 118, 0.08);
+}
+
+.paquete-principal-contenido {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 3rem 1.5rem;
+
+    max-width: 1100px;
+    margin: 0 auto;
 
     h2 {
-        text-align: center;
+        margin: 0;
     }
 }
 
-.paquete {
-    @include m.tarjeta-base;
+.paquete-principal-etiqueta {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0.4rem 0.9rem;
+
+    background-color: rgba(217, 118, 118, 0.12);
+    color: v.$color-secundario;
+
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.paquete-principal-descripcion {
+    max-width: 720px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.paquete-principal-precio {
+    padding: 1.5rem;
+
+    background-color: v.$color-blanco;
+    border: 1px solid rgba(212, 167, 44, 0.35);
+    border-radius: v.$radio-grande;
+    box-shadow: v.$sombra-suave;
+
+    text-align: center;
+    scroll-margin-top: 2rem;
+}
+
+.paquete-precio-etiqueta {
+    margin-bottom: 0.5rem;
+    color: v.$color-secundario;
+    font-weight: 600;
+}
+
+.paquete-precio-cantidad {
+    margin-bottom: 0.5rem;
+    color: v.$color-primario;
+
+    span {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+}
+
+.paquete-precio-incluye {
+    margin-bottom: 1rem;
+}
+
+.paquete-precio-comparacion {
+    margin-bottom: 0.25rem;
+    color: rgba(25, 50, 74, 0.75);
+    font-size: 0.9rem;
+}
+
+.paquete-precio-ahorro {
+    margin-bottom: 1rem;
+    color: v.$color-secundario;
+    font-weight: 700;
+}
+
+.paquete-precio-nota {
+    margin: 0;
+    color: rgba(25, 50, 74, 0.75);
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.paquete-principal-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.paquete-principal-detalles {
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(212, 167, 44, 0.35);
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+}
+
+.paquete-principal-lista {
+    margin: 0;
+    padding-left: 1.25rem;
+
+    li {
+        margin-bottom: 0.6rem;
+        line-height: 1.5;
+
+        &::marker {
+            color: v.$color-acento;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.paquete-principal-cta {
+    align-self: flex-start;
+}
+
+.tarifas-individuales {
+    padding: 3rem 1.5rem;
+}
+
+.tarifas-individuales-contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+.tarifas-individuales-etiqueta {
+    margin-bottom: 0.75rem;
+
+    color: v.$color-secundario;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.tarifas-individuales-descripcion {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.tarifas-individuales-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 
     max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
+    margin: 2rem auto 0;
+}
+
+.tarifa-card {
+    @include m.tarjeta-base;
 
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    padding: 1.75rem;
+    text-align: left;
 
-    padding: 1.5rem;
-
-    img {
-        display: block;
-        width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
+    h3 {
+        margin-bottom: 1rem;
     }
+}
 
-    figcaption {
-        text-align: center;
-        margin-top: 0.75rem;
-        font-size: 0.875rem;
-        color: rgba(25, 50, 74, 0.7);
-    }
+.tarifa-card-etiqueta {
+    margin-bottom: 0.5rem;
 
-    ul {
-        padding-left: 1.25rem;
+    color: v.$color-secundario;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.tarifa-card-descripcion {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.tarifa-card-precio {
+    margin-bottom: 0.25rem;
+    color: v.$color-primario;
+
+    span {
+        font-size: 1.75rem;
+        font-weight: 700;
     }
+}
+
+.tarifa-card-duracion {
+    margin-bottom: 1.5rem;
+    color: rgba(25, 50, 74, 0.75);
+    font-size: 0.9rem;
+}
+
+.tarifa-card-subtitulo {
+    margin-bottom: 0.75rem;
+}
+
+.tarifa-card-lista {
+    margin: 0 0 1.5rem;
+    padding-left: 1.25rem;
 
     li {
         margin-bottom: 0.5rem;
+        line-height: 1.5;
+
+        &::marker {
+            color: v.$color-acento;
+        }
+    }
+}
+
+.tarifa-card-cta {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+@media (min-width: 768px) {
+    .tarifas-individuales-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .paquete-principal {
+        padding: 5rem 2rem;
+    }
+
+    .paquete-principal-intro {
+        grid-area: intro;
+    }
+
+    .paquete-principal-suma {
+        color: v.$color-acento;
+    }
+
+    .paquete-principal-contenido {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-areas:
+            "intro precio"
+            "detalles detalles"
+            "cta cta";
+
+        column-gap: 3rem;
+        row-gap: 1.5rem;
+        align-items: start;
+    }
+
+    .paquete-principal-lista {
+        columns: 2;
+        column-gap: 3rem;
+
+        li {
+            break-inside: avoid;
+        }
+    }
+
+    .paquete-principal-precio {
+        grid-area: precio;
+        width: 100%;
+    }
+
+    .paquete-principal-detalles {
+        grid-area: detalles;
+    }
+
+    .paquete-principal-cta {
+        grid-area: cta;
+        justify-self: start;
     }
 }

@@ -70,32 +70,49 @@
     </main>
 
     <footer class="footer">
-        <nav>
-            <ul class="redes-sociales">
-                <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="../assets/instagram.png" alt="logo de instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <img src="../assets/facebook.png" alt="logo de facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/" target="_blank">
-                        <img src="../assets/yt.png" alt="logo de youtube">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <p>&copy;<span id="year"></span> Todos los Derechos Reservados</p>
-        <script> document.getElementById('year').textContent = new Date().getFullYear(); </script>
+
+        <div class="footer-contenido">
+
+            <div class="footer-marca">
+                <p class="footer-nombre">Festiv</p>
+                <p>Inspira, Planea, Celebra</p>
+            </div>
+
+            <nav class="footer-navegacion" aria-label="Navegación del pie de página">
+
+                <a href="../index.html">Inicio</a>
+                <a href="./servicios.html">Experiencias</a>
+                <a href="./sobre-mi.html">Nosotros</a>
+                <a href="./proyectos.html">Paquetes</a>
+                <a href="./contacto.html">Contacto</a>
+
+            </nav>
+
+            <div class="footer-contacto">
+                <a class="footer-whatsapp"
+                    href="https://wa.me/525511998486?text=Hola%2C%20vi%20las%20experiencias%20de%20Festiv%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n."
+                    target="_blank" rel="noopener noreferrer" aria-label="Contactar a Festiv por WhatsApp">
+                    WhatsApp
+                </a>
+            </div>
+
+        </div>
+
+        <p class="footer-copy">
+            &copy;<span id="year"></span> Festiv. Todos los derechos reservados.
+        </p>
+
     </footer>
+
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
 </body>
 
 </html>
