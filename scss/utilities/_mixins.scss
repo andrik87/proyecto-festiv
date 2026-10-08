@@ -5,7 +5,7 @@
     box-shadow: v.$sombra-suave;
 }
 @mixin boton-base {
-    background-color: v.$color-secundario;
+    background-color: v.$color-secundario-contraste;
     color: v.$color-blanco;
     padding: 1rem 1.5rem;
     transition: background-color 0.2s ease,

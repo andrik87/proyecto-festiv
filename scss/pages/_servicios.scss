@@ -186,7 +186,7 @@
 
 .servicio-estado-proximamente {
     background-color: rgba(217, 118, 118, 0.12);
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
 }
 
 /* Experiencias próximas*/
@@ -230,7 +230,7 @@
 }
 
 .experiencia-futura-resumen {
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-weight: 600;
     margin-bottom: 1rem;
 }

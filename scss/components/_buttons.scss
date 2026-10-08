@@ -62,9 +62,9 @@
 }
 
 .hero-btn-principal {
-    background-color: v.$color-secundario;
+    background-color: v.$color-secundario-contraste;
     color: v.$color-blanco;
-    border: 2px solid v.$color-secundario;
+    border: 2px solid v.$color-secundario-contraste;
 
     &:hover {
         background-color: v.$color-secundario-hover;
@@ -87,7 +87,7 @@
 .experiencia-link {
     display: inline-block;
     margin-top: 0.75rem;
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.2s ease,

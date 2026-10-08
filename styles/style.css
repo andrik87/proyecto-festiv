@@ -53,7 +53,7 @@ h3 {
   transform-origin: left center;
 }
 .nav-link:hover {
-  color: #D97676;
+  color: #B04D56;
 }
 .nav-link:focus {
   color: #D4A72C;
@@ -160,7 +160,7 @@ h3 {
 }
 .card:hover {
   transform: translateY(-4px);
-  border-color: #D97676;
+  border-color: #B04D56;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -171,7 +171,7 @@ h3 {
 }
 
 .formulario-contacto button {
-  background-color: #D97676;
+  background-color: #B04D56;
   color: #FFFFFF;
   padding: 1rem 1.5rem;
   transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -181,7 +181,7 @@ h3 {
   font-family: inherit;
 }
 .formulario-contacto button:hover {
-  background-color: #C96565;
+  background-color: #A94A53;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 .formulario-contacto button:focus-visible {
@@ -194,7 +194,7 @@ h3 {
 }
 
 .informacion-contacto a {
-  background-color: #D97676;
+  background-color: #B04D56;
   color: #FFFFFF;
   padding: 1rem 1.5rem;
   transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -203,7 +203,7 @@ h3 {
   align-self: center;
 }
 .informacion-contacto a:hover {
-  background-color: #C96565;
+  background-color: #A94A53;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 .informacion-contacto a:focus-visible {
@@ -228,12 +228,12 @@ h3 {
 }
 
 .hero-btn-principal {
-  background-color: #D97676;
+  background-color: #B04D56;
   color: #FFFFFF;
-  border: 2px solid #D97676;
+  border: 2px solid #B04D56;
 }
 .hero-btn-principal:hover {
-  background-color: #C96565;
+  background-color: #A94A53;
   color: #FFFFFF;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
@@ -251,7 +251,7 @@ h3 {
 .experiencia-link {
   display: inline-block;
   margin-top: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s ease, transform 0.2s ease;
@@ -260,7 +260,7 @@ h3 {
   content: " →";
 }
 .experiencia-link:hover {
-  color: #C96565;
+  color: #A94A53;
   transform: translateX(3px);
 }
 .experiencia-link:focus-visible {
@@ -297,7 +297,7 @@ h3 {
 }
 
 .carousel-indicators .active {
-  background-color: #D97676;
+  background-color: #B04D56;
 }
 
 .carousel-control-prev:focus-visible,
@@ -379,7 +379,7 @@ h3 {
 
 .presentacion-contacto-etiqueta {
   margin-bottom: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -395,14 +395,14 @@ h3 {
   justify-content: center;
   margin-top: 1.5rem;
   padding: 0.85rem 1.25rem;
-  background-color: #D97676;
+  background-color: #B04D56;
   color: #FFFFFF;
   border-radius: 999px;
   font-weight: 600;
   text-decoration: none;
 }
 .contacto-whatsapp:hover {
-  background-color: #C96565;
+  background-color: #A94A53;
   color: #FFFFFF;
 }
 
@@ -435,7 +435,7 @@ h3 {
 
 .datos-cotizacion-etiqueta {
   margin-bottom: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -528,7 +528,7 @@ h3 {
 
 .presentacion-paquetes-etiqueta {
   margin-bottom: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -560,7 +560,7 @@ h3 {
   margin: 0;
   padding: 0.4rem 0.9rem;
   background-color: rgba(217, 118, 118, 0.12);
-  color: #D97676;
+  color: #B04D56;
   border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 600;
@@ -584,7 +584,7 @@ h3 {
 
 .paquete-precio-etiqueta {
   margin-bottom: 0.5rem;
-  color: #D97676;
+  color: #B04D56;
   font-weight: 600;
 }
 
@@ -609,7 +609,7 @@ h3 {
 
 .paquete-precio-ahorro {
   margin-bottom: 1rem;
-  color: #D97676;
+  color: #B04D56;
   font-weight: 700;
 }
 
@@ -668,7 +668,7 @@ h3 {
 
 .tarifas-individuales-etiqueta {
   margin-bottom: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -702,7 +702,7 @@ h3 {
 
 .tarifa-card-etiqueta {
   margin-bottom: 0.5rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.875rem;
   font-weight: 600;
 }
@@ -814,7 +814,7 @@ h3 {
 
 .presentacion-nosotros-etiqueta {
   margin-bottom: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -861,7 +861,7 @@ h3 {
 
 .proposito-festiv-etiqueta {
   margin-bottom: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -890,7 +890,7 @@ h3 {
 
 .origen-festiv-etiqueta {
   margin-bottom: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -921,7 +921,7 @@ h3 {
 
 .pilares-festiv-etiqueta {
   margin-bottom: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -975,7 +975,7 @@ h3 {
 
 .evolucion-festiv-etiqueta {
   margin-bottom: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -1048,7 +1048,7 @@ h3 {
   text-decoration: none;
 }
 .cta-nosotros-link:hover {
-  background-color: #D97676;
+  background-color: #B04D56;
   color: #FFFFFF;
 }
 
@@ -1324,22 +1324,22 @@ h3 {
   color: #19324A;
 }
 .paquete-destacado-info .experiencia-link {
-  color: #D97676;
+  color: #B04D56;
 }
 .paquete-destacado-info .experiencia-link:hover {
-  color: #C96565;
+  color: #A94A53;
 }
 
 .experiencia-link {
-  color: #D97676;
+  color: #B04D56;
 }
 .experiencia-link:hover {
-  color: #C96565;
+  color: #A94A53;
 }
 
 .paquete-etiqueta {
   margin-bottom: 0.75rem;
-  color: #D97676;
+  color: #B04D56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -1375,7 +1375,7 @@ h3 {
 
 .beneficios-quinta-etiqueta {
   margin-bottom: 0.5rem;
-  color: #D97676;
+  color: #B04D56;
   font-weight: 600;
 }
 
@@ -1429,7 +1429,7 @@ h3 {
     margin-bottom: 0.75rem;
     padding: 0.4rem 0.9rem;
     background-color: rgba(217, 118, 118, 0.12);
-    color: #D97676;
+    color: #B04D56;
     border-radius: 999px;
     font-size: 0.9rem;
     font-weight: 600;
@@ -1670,7 +1670,7 @@ h3 {
 
 .servicio-estado-proximamente {
   background-color: rgba(217, 118, 118, 0.12);
-  color: #D97676;
+  color: #B04D56;
 }
 
 /* Experiencias próximas*/
@@ -1709,7 +1709,7 @@ h3 {
 }
 
 .experiencia-futura-resumen {
-  color: #D97676;
+  color: #B04D56;
   font-weight: 600;
   margin-bottom: 1rem;
 }

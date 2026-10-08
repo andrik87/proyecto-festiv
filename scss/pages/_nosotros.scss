@@ -28,7 +28,7 @@
 .presentacion-nosotros-etiqueta {
     margin-bottom: 0.75rem;
 
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -83,7 +83,7 @@
 .proposito-festiv-etiqueta {
     margin-bottom: 0.75rem;
 
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -116,7 +116,7 @@
 .origen-festiv-etiqueta {
     margin-bottom: 0.75rem;
 
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -152,7 +152,7 @@
 .pilares-festiv-etiqueta {
     margin-bottom: 0.75rem;
 
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -216,7 +216,7 @@
 .evolucion-festiv-etiqueta {
     margin-bottom: 0.75rem;
 
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -307,7 +307,7 @@
     text-decoration: none;
 
     &:hover {
-        background-color: v.$color-secundario;
+        background-color: v.$color-secundario-contraste;
         color: v.$color-blanco;
     }
 }

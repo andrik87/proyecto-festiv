@@ -18,7 +18,7 @@
 .presentacion-paquetes-etiqueta {
     margin-bottom: 0.75rem;
 
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -53,7 +53,7 @@
     padding: 0.4rem 0.9rem;
 
     background-color: rgba(217, 118, 118, 0.12);
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
 
     border-radius: 999px;
     font-size: 0.9rem;
@@ -80,7 +80,7 @@
 
 .paquete-precio-etiqueta {
     margin-bottom: 0.5rem;
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-weight: 600;
 }
 
@@ -106,7 +106,7 @@
 
 .paquete-precio-ahorro {
     margin-bottom: 1rem;
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-weight: 700;
 }
 
@@ -171,7 +171,7 @@
 .tarifas-individuales-etiqueta {
     margin-bottom: 0.75rem;
 
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -207,7 +207,7 @@
 .tarifa-card-etiqueta {
     margin-bottom: 0.5rem;
 
-    color: v.$color-secundario;
+    color: v.$color-secundario-contraste;
     font-size: 0.875rem;
     font-weight: 600;
 }

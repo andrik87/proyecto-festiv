@@ -9,7 +9,7 @@
     box-shadow 0.2s ease;
     &:hover {
     transform: translateY(-4px);
-    border-color: v.$color-secundario;
+    border-color: v.$color-secundario-contraste;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
     }
 }
