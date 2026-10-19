@@ -4,7 +4,7 @@ Festiv es un sitio web de experiencias para eventos sociales que ofrece cabinas 
 
 ## Sitio web
 
-[Ver sitio web](https://andrik87.github.io/proyecto-festiv/)
+[Ver sitio web en Netlify](https://legendary-snickerdoodle-0e0ee4.netlify.app/)
 
 ## Tecnologías utilizadas
 
