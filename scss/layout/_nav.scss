@@ -1,13 +1,37 @@
 @use "../utilities/variables" as v;
+
 .navbar {
     background-color: v.$color-blanco;
     border-bottom: 1px solid v.$color-borde;
     padding: 1rem;
+    
+    .container-fluid {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .navbar-collapse {
+        padding-top: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.5rem 0.65rem;
+        border: 1px solid v.$color-borde;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: v.$color-fondo;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 3px rgba(212, 167, 44, 0.25);
+        }
+    }
 }
 
 .nav-link {
     color: v.$color-primario;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.2s ease;
     transform-origin: left center;
@@ -29,5 +53,23 @@
 
     &:active {
         transform: scale(0.97);
+    }
+
+    &.active,
+    &[aria-current="page"] {
+        color: v.$color-secundario;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        .navbar-collapse {
+            padding-top: 0;
+        }
+
+        .navbar-nav {
+            gap: 0.5rem;
+        }
     }
 }
