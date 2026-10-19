@@ -1,9 +1,11 @@
 @use"variables" as v;
 
-@mixin tarjeta-base {
-    background-color: v.$color-blanco;
-    border-radius: v.$radio-grande;
-    box-shadow: v.$sombra-suave;
+@mixin tarjeta-base($fondo: v.$color-blanco,
+    $radio: v.$radio-grande,
+    $sombra: v.$sombra-suave) {
+    background-color: $fondo;
+    border-radius: $radio;
+    box-shadow: $sombra;
 }
 
 @mixin boton-base($fondo, $color-texto) {

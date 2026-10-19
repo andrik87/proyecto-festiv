@@ -119,16 +119,16 @@ h3 {
   object-fit: cover;
 }
 
-.informacion-contacto a:hover, .formulario-contacto button:hover {
+.formulario-contacto button:hover, .informacion-contacto a:hover {
   background-color: #C96565;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
-.informacion-contacto a:focus-visible, .formulario-contacto button:focus-visible {
+.formulario-contacto button:focus-visible, .informacion-contacto a:focus-visible {
   outline: 2px solid #D4A72C;
   outline-offset: 3px;
   box-shadow: none;
 }
-.informacion-contacto a:active, .formulario-contacto button:active {
+.formulario-contacto button:active, .informacion-contacto a:active {
   transform: scale(0.98);
 }
 
@@ -517,3 +517,5 @@ h3 {
     padding: 0;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
