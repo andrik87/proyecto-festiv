@@ -134,6 +134,7 @@ h3 {
   background-color: #FFFFFF;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
   border: 1px solid transparent;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -141,6 +142,17 @@ h3 {
   transform: translateY(-4px);
   border-color: #D97676;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+.card .card-body {
+  padding: 1.5rem;
+}
+.card .card-title {
+  color: #19324A;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.card .card-text {
+  line-height: 1.6;
 }
 
 .card-img-top {
