@@ -8,17 +8,18 @@ Festiv es un sitio web de experiencias para eventos sociales que ofrece cabinas 
 
 ## Tecnologías utilizadas
 
-- HTML
-- CSS
-- Bootstrap
-- Git
-- GitHub
+- HTML5 semántico.
+- CSS3.
+- Sass (SCSS), organizado en partials con variables, mixins y extends.
+- Bootstrap.
+- Animate.css.
+- Git y GitHub.
 
 ## Características
 
 - Diseño responsive con enfoque Mobile First y uso de media queries.
 - Navbar responsive con menú hamburguesa.
-- Carousel de experiencias con Bootstrap.
+- Carrusel de experiencias con Bootstrap.
 - Tarjetas organizadas con el sistema de grillas de Bootstrap.
 - Estilos personalizados con la identidad visual de Festiv.
 
